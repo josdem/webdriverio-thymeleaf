@@ -7,7 +7,7 @@ class OrderPage extends Page {
     get state() { return $('select[id="Region_Sep"] option[value="MI"]') }
     get searchLocationsButton() { return $('button[type="submit"]') }
     get driveUpCarryout() { return $('a[class="link"]') }
-    
+
     async selectZipCodeCityAndState() {
         (await this.zipCode).setValue(properties.zipCode);
         (await this.city).setValue(properties.city);
