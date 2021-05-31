@@ -5,7 +5,7 @@ class EntreePage extends Page {
     get pizza() { return $('div[class="media-pizza"]') }
 
     async validatePizza() {
-        expect(this.pizza).toBeExisting();
+        await expect(this.pizza).toBeExisting();
     }
 
 }
