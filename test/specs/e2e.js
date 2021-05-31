@@ -1,5 +1,6 @@
 const { async } = require('rxjs');
 const OrderPage = require('../pageobjects/order.page');
+const SearchPage = require('../pageobjects/search.page');
 
 describe('Ordering end to end', () => {
     it('should send zip code, city and state', async () => {
@@ -8,7 +9,7 @@ describe('Ordering end to end', () => {
     });
 
     it('should select drive up carryout', async () => {
-        await OrderPage.selectDriveUpCarryout();
+        await SearchPage.selectDriveUpCarryout();
     });
 
 });
