@@ -8,10 +8,14 @@ class OrderPage extends Page {
     get searchLocationsButton() { return $('button[type="submit"]') }
 
     async selectZipCodeCityAndState() {
-        (await this.zipCode).setValue(properties.zipCode);
-        (await this.city).setValue(properties.city);
-        (await this.state).click();
-        (await this.searchLocationsButton).click();
+        const zipCodeConst = await this.zipCode;
+        (await zipCodeConst).setValue(properties.zipCode);
+        const cityConst = await this.city;
+        (await cityConst).setValue(properties.city);
+        const stateConst = await this.state;
+        (await stateConst).click();
+        const searchLocationsButtonConst = this.searchLocationsButton;
+        (await searchLocationsButtonConst).click();
     }
 
     open() {

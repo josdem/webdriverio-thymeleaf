@@ -8,14 +8,16 @@ describe('Ordering end to end', () => {
     it('should send zip code, city and state', async () => {
         await OrderPage.open();
         await OrderPage.selectZipCodeCityAndState();
-        browser.pause(properties.timeToWait);
+        await SearchPage.selectDriveUpCarryout();
     });
 
     it('should select drive up carryout', async () => {
+        await browser.pause(properties.timeToWait);
         await SearchPage.selectDriveUpCarryout();
     });
 
     it('should have pizza option', async () => {
+        await browser.pause(properties.timeToWait);
         await EntreePage.validatePizza();
     });
 

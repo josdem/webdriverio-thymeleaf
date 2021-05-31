@@ -5,7 +5,8 @@ class SearchPage extends Page {
     get driveUpCarryout() { return $('a[class="link"]') }
 
     async selectDriveUpCarryout() {
-        (await this.driveUpCarryout).click();
+        const driveUpCarryoutConst = await this.driveUpCarryout;
+        (await driveUpCarryoutConst).click();
     }
 
 }
