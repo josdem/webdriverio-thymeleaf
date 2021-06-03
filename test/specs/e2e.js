@@ -10,7 +10,6 @@ describe('Ordering end to end', () => {
         await UtilPage.waitForLoading();
         await OrderPage.open();
         await OrderPage.selectZipCodeCityAndState();
-        await SearchPage.selectDriveUpCarryout();
     });
 
     it('should select drive up carryout', async () => {
@@ -20,7 +19,7 @@ describe('Ordering end to end', () => {
 
     it('should have pizza option', async () => {
         await UtilPage.waitForLoading();
-        await EntreePage.validatePizza();
+        await EntreePage.selectPizza();
     });
 
 });
