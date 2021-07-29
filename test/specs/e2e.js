@@ -7,6 +7,11 @@ const CheckoutPage = require('../pageobjects/checkout.page')
 describe('Ordering end to end', () => {
     it('should send zip code, city and state', async () => {
         await OrderPage.open()
+        const nickname = await browser.execute((key) => {
+            this.localStorage.getItem(key)
+        }, 'nickname')
+        
+        console.log("************************************* nickname: ", nickname)
         await OrderPage.selectZipCodeCityAndState()
     })
 
