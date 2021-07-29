@@ -1,5 +1,5 @@
-const Page = require('./page');
-let properties = require('../config/properties');
+const Page = require('./page')
+let properties = require('../config/properties')
 
 class OrderPage extends Page {
     get zipCode() { return $('input[id="Postal_Code_Sep"]') }
@@ -8,23 +8,23 @@ class OrderPage extends Page {
     get searchLocationsButton() { return $('button[type="submit"]') }
 
     async selectZipCodeCityAndState() {
-        const zipCodeConst = await this.zipCode;
-        await expect(zipCodeConst).toBeExisting();
-        zipCodeConst.setValue(properties.zipCode);
-        const cityConst = await this.city;
-        await expect(cityConst).toBeExisting();
-        cityConst.setValue(properties.city);
-        const stateConst = await this.state;
-        await expect(stateConst).toBeExisting();
-        stateConst.click();
-        const searchLocationsButtonConst = await this.searchLocationsButton;
-        await expect(searchLocationsButtonConst).toBeExisting();
-        searchLocationsButtonConst.click();
+        const zipCodeConst = await this.zipCode
+        await expect(zipCodeConst).toBeExisting()
+        zipCodeConst.setValue(properties.zipCode)
+        const cityConst = await this.city
+        await expect(cityConst).toBeExisting()
+        cityConst.setValue(properties.city)
+        const stateConst = await this.state
+        await expect(stateConst).toBeExisting()
+        stateConst.click()
+        const searchLocationsButtonConst = await this.searchLocationsButton
+        await expect(searchLocationsButtonConst).toBeExisting()
+        searchLocationsButtonConst.click()
     }
 
     open() {
-        return super.open();
+        return super.open()
     }
 }
 
-module.exports = new OrderPage();
+module.exports = new OrderPage()
