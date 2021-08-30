@@ -1,11 +1,10 @@
-Webdriver.io Workshop
-----------------------------
+## Webdriver.io Workshop
 
 This is a workshop to show features around [Webdriver.io](https://webdriver.io/)
 
 #### Requirements
 
-* [NodeJS](https://nodejs.org/en/) version: `16.8.0`
+- [NodeJS](https://nodejs.org/en/) version: `16.8.0`
 
 **Note:** I recommed to use [NVM](https://github.com/nvm-sh/nvm) to manage NodeJS versions
 
@@ -23,8 +22,7 @@ npx wdio run wdio.conf.js
 
 #### Read this as reference
 
-* https://webdriver.io/docs/gettingstarted
-
+- https://webdriver.io/docs/gettingstarted
 
 #### Notes
 
