@@ -14,6 +14,12 @@ This is a workshop to show features around [Webdriver.io](https://webdriver.io/)
 npm install
 ```
 
+#### To format the project
+
+```bash
+npx prettier --write .
+```
+
 #### To run the project
 
 ```bash
