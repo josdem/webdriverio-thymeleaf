@@ -1,5 +1,4 @@
 const Page = require("./page")
-let properties = require("../config/properties")
 
 class EntreePage extends Page {
   get pizza() {
