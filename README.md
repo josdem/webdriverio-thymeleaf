@@ -36,7 +36,7 @@ env NODE_ENV=${environment} npx wdio run wdio.conf.js
 
 where:
 
-- `${environment}` could be:  production
+- `${environment}` could be: production
 
 #### Read this as reference
 
