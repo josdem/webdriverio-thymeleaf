@@ -1,5 +1,5 @@
 const Page = require("./page")
-const properties = require("../config/test.properties")
+const properties = require(`../config/${process.env.NODE_ENV}.properties`)
 
 class OrderPage extends Page {
   get zipCode() {

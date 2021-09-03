@@ -1,4 +1,4 @@
-const properties = require("../config/properties")
+const properties = require(`../config/${process.env.NODE_ENV}.properties`)
 
 module.exports = class Page {
   open(path) {

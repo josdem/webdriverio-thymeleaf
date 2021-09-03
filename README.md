@@ -28,6 +28,16 @@ npx prettier --write .
 npx wdio run wdio.conf.js
 ```
 
+### Set another environment
+
+```bash
+env NODE_ENV=${environment} npx wdio run wdio.conf.js
+```
+
+where:
+
+- `${environment}` could be:  production
+
 #### Read this as reference
 
 - https://webdriver.io/docs/gettingstarted
