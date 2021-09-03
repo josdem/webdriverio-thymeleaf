@@ -1,4 +1,3 @@
-const { async } = require("rxjs")
 const OrderPage = require("../pageobjects/order.page")
 const SearchPage = require("../pageobjects/search.page")
 const EntreePage = require("../pageobjects/entree.page")

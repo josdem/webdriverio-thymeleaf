@@ -1,5 +1,4 @@
 const Page = require("./page")
-let properties = require("../config/properties")
 
 class SearchPage extends Page {
   get driveUpCarryout() {
