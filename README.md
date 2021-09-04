@@ -46,6 +46,8 @@ export SAUCE_USERNAME=${YOUR_SAUCE_USERNAME}
 export SAUCE_ACCESS_KEY=${YOUR_SAUCE_KEY}
 ```
 
+And
+
 ```bash
 npx wdio run test/config/wdio.sauce.conf.js
 ```
