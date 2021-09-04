@@ -1,5 +1,7 @@
 exports.config = {
   //
+  user: process.env.SAUCE_USERNAME,
+  key: process.env.SAUCE_ACCESS_KEY,
   // ====================
   // Runner Configuration
   // ====================
@@ -58,6 +60,11 @@ exports.config = {
       maxInstances: 5,
       //
       browserName: "chrome",
+      browserVersion: "92",
+      platformName: "Windows 10",
+      "sauce:options": {
+        screenResolution: "1920x1080",
+      },
       acceptInsecureCerts: true,
       // If outputDir is provided WebdriverIO can capture driver session logs
       // it is possible to configure which logTypes to include/exclude.
@@ -112,7 +119,7 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ["chromedriver"],
+  services: ["sauce"],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
