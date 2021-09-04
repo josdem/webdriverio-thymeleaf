@@ -3,7 +3,7 @@ const { config } = require("../../wdio.conf")
 config.user = process.env.SAUCE_USERNAME
 config.key = process.env.SAUCE_ACCESS_KEY
 
-config.services = config.services.concat('sauce')
+config.services = config.services.concat("sauce")
 
 config.capabilities = [
   {

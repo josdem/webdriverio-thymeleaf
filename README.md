@@ -22,10 +22,10 @@ npm install
 npx prettier --write .
 ```
 
-#### To run the project
+#### To run the project locally
 
 ```bash
-npx wdio run wdio.conf.js
+npx wdio run test/config/wdio.local.conf.js
 ```
 
 ### Set another environment
@@ -37,6 +37,18 @@ env NODE_ENV=${environment} npx wdio run wdio.conf.js
 where:
 
 - `${environment}` could be: production
+
+
+#### To run the project in [SauceLabs](https://saucelabs.com/)
+
+```bash
+export SAUCE_USERNAME=${YOUR_SAUCE_USERNAME}
+export SAUCE_ACCESS_KEY=${YOUR_SAUCE_KEY}
+```
+
+```bash
+npx wdio run test/config/wdio.sauce.conf.js
+```
 
 #### Read this as reference
 
