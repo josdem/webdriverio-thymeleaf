@@ -38,7 +38,6 @@ where:
 
 - `${environment}` could be: production
 
-
 #### To run the project in [SauceLabs](https://saucelabs.com/)
 
 ```bash
