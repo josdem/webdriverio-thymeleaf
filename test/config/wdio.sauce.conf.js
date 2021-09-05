@@ -14,6 +14,14 @@ config.capabilities = [
       screenResolution: "1920x1080",
     },
   },
+  {
+    browserName: "firefox",
+    browserVersion: "91",
+    platformName: "Windows 10",
+    "sauce:options": {
+      screenResolution: "1920x1080",
+    },
+  },
 ]
 
 exports.config = config
