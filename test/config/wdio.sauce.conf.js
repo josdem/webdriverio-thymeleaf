@@ -15,6 +15,14 @@ config.capabilities = [
     },
   },
   {
+    browserName: "safari",
+    browserVersion: "14",
+    platformName: "macOS 11.00",
+    "sauce:options": {
+      screenResolution: "1920x1440",
+    },
+  },
+  {
     browserName: "firefox",
     browserVersion: "91",
     platformName: "Windows 10",
