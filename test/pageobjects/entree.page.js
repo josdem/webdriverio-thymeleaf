@@ -2,7 +2,7 @@ const Page = require("./page")
 
 class EntreePage extends Page {
   get pizza() {
-    return $('div[class="media-pizza"]')
+    return $('div[id="pizza"]')
   }
 
   async selectPizza() {
