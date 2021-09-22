@@ -2,7 +2,7 @@ const Page = require("./page")
 
 class CheckoutPage extends Page {
   get itemFromCart() {
-    return $('div[class="media-cart"]')
+    return $('div[id="cart"]')
   }
 
   async validateItem() {
