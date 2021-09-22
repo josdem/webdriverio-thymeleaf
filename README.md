@@ -48,12 +48,17 @@ export SAUCE_ACCESS_KEY=${YOUR_SAUCE_KEY}
 And
 
 ```bash
-env NODE_ENV=${environment} npx wdio run test/config/wdio.sauce.conf.js
+env NODE_ENV=${environment} npx wdio run test/config/wdio.${target}.conf.js
 ```
 
 where:
 
 - `${environment}` could be: production
+- `${target}` could be:
+  - local
+  - android
+  - iphone
+  - browser
 
 #### Read this as reference
 
