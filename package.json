@@ -7,7 +7,7 @@
     "@wdio/mocha-framework": "^7.11.1",
     "@wdio/sauce-service": "^7.11.1",
     "@wdio/spec-reporter": "^7.10.1",
-    "chromedriver": "^92.0.1",
+    "chromedriver": "^94.0.0",
     "prettier": "2.3.2",
     "wdio-chromedriver-service": "^7.2.0",
     "wdio-intercept-service": "^4.1.7"
