@@ -4,11 +4,7 @@ const EntreePage = require("../pageobjects/entree.page")
 const CheckoutPage = require("../pageobjects/checkout.page")
 
 describe("Ordering end to end", () => {
-
-  before(async () => {
-    console.log("Before any test case")
-  })
-  
+  before("Before any test case", async () => {})
 
   it("should send zip code, city and state", async () => {
     await OrderPage.open()
@@ -27,7 +23,5 @@ describe("Ordering end to end", () => {
     await CheckoutPage.validateItem()
   })
 
-  after(async () => {
-    console.log("After any test case")
-  })
+  after("After any test case", async () => {})
 })
