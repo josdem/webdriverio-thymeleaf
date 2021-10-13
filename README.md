@@ -60,6 +60,16 @@ where:
   - iphone
   - browser
 
+#### To run a single test
+
+```bash
+npx wdio run test/config/wdio.local.conf.js --spec=test/specs/${test}.spec.js
+```
+
+where:
+
+`${test}` is the test spec name you want to run
+
 #### Read this as reference
 
 - https://webdriver.io/docs/gettingstarted
