@@ -16,18 +16,18 @@ class OrderPage extends Page {
   }
 
   async selectZipCodeCityAndState() {
-    const zipCodeConst = await this.zipCodeInput
-    await expect(zipCodeConst).toBeExisting()
-    zipCodeConst.setValue(properties.zipCode)
-    const cityConst = await this.cityInput
-    await expect(cityConst).toBeExisting()
-    cityConst.setValue(properties.city)
-    const stateConst = await this.stateSelector
-    await expect(stateConst).toBeExisting()
-    stateConst.click()
-    const searchLocationsButtonConst = await this.searchLocationsButton
-    await expect(searchLocationsButtonConst).toBeExisting()
-    searchLocationsButtonConst.click()
+    const zipCode = await this.zipCodeInput
+    await expect(zipCode).toBeExisting()
+    zipCode.setValue(properties.zipCode)
+    const city = await this.cityInput
+    await expect(city).toBeExisting()
+    city.setValue(properties.city)
+    const state = await this.stateSelector
+    await expect(state).toBeExisting()
+    state.click()
+    const button = await this.searchLocationsButton
+    await expect(button).toBeExisting()
+    button.click()
   }
 
   open() {
