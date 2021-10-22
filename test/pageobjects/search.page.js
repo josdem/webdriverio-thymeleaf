@@ -1,14 +1,14 @@
 const Page = require("./page")
 
 class SearchPage extends Page {
-  get driveUpCarryout() {
+  get driveUpCarryoutButton() {
     return $('a[data-guid="drive-up-carryout"]')
   }
 
   async selectDriveUpCarryout() {
-    const driveUpCarryoutConst = await this.driveUpCarryout
-    await expect(driveUpCarryoutConst).toBeExisting()
-    driveUpCarryoutConst.click()
+    const driveUpCarryOut = await this.driveUpCarryoutButton
+    await expect(driveUpCarryOut).toBeExisting()
+    driveUpCarryOut.click()
   }
 }
 
