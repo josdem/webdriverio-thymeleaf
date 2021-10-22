@@ -17,16 +17,16 @@ class OrderPage extends Page {
 
   async selectZipCodeCityAndState() {
     const zipCode = await this.zipCodeInput
-    await expect(zipCode).toBeExisting()
+    expect(zipCode).toBeExisting()
     zipCode.setValue(properties.zipCode)
     const city = await this.cityInput
-    await expect(city).toBeExisting()
+    expect(city).toBeExisting()
     city.setValue(properties.city)
     const state = await this.stateSelector
-    await expect(state).toBeExisting()
+    expect(state).toBeExisting()
     state.click()
     const button = await this.searchLocationsButton
-    await expect(button).toBeExisting()
+    expect(button).toBeExisting()
     button.click()
   }
 
