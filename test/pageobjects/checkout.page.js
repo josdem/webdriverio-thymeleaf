@@ -1,13 +1,13 @@
 const Page = require("./page")
 
 class CheckoutPage extends Page {
-  get itemFromCart() {
+  get cartItem() {
     return $('div[id="cart"]')
   }
 
   async validateItem() {
-    const itemConst = await this.itemFromCart
-    await expect(itemConst).toBeExisting()
+    const item = await this.cartItem
+    expect(item).toBeExisting()
   }
 }
 

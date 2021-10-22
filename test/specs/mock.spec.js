@@ -3,7 +3,7 @@ const OrderPage = require("../pageobjects/order.page")
 const REDIRECTION = "https://webdriver.io"
 
 describe("Mocking the response", () => {
-  it("should change localhost to webdriverio", async () => {
+  it("changes localhost to webdriverio", async () => {
     const pageMock = await browser.mock(properties.url)
     pageMock.respond(REDIRECTION)
     await OrderPage.open()
